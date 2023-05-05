@@ -24,6 +24,7 @@ class Requester {
         puppeteer.use(StealthPlugin())
         const browser = await puppeteer.launch({
             headless: this.#headless,
+            headless: "new",
             args: [
                 '--fast-start',
                 '--disable-extensions',
